@@ -7,11 +7,11 @@ favicon: /favicon.ico
 # Header
 
 # Keywords of your site | 网站关键字
-keywords: MinHow,MinHow's Blog
+keywords: Lungern Blog
 # Head headline | 头部标题
-header_title: MinHow's Blog
+header_title: Lungern Site
 # Head description | 头部描述
-header_description: 一个专注 WEB 开发的技术博客
+header_description: web开发者, 全栈爱好者
 # Link to your logo | logo地址
 logo: images/logo.png
 # Link to your banner_img | 首页banner图地址
@@ -41,21 +41,21 @@ menu:
 #    target: true         Whether to jump out | 是否跳出
 social:
   home:
-    title: MinHow
-    url: //minhow.com
-    target: true
+    title: Home
+    url: /
+    target: false
   github:
     title: Github
-    url: //github.com/wongminho
+    url: //github.com/xiiiAtCn
     target: true
   weibo:
     title: Weibo
-    url: //weibo.com/WongMinHo
-    target: true
+    url: 
+    target: false
   twitter:
     title: Twitter
-    url: //twitter.com/huangminhow
-    target: true
+    url: //twitter.com/AissassiA
+    target: fasle
   #qq:
   #weixin:
   #snapchat:
@@ -76,7 +76,7 @@ open_new_link: false
 # Article default cover picture，size：350*150 | 文章默认封面图，尺寸：350*150
 cover_picture: images/banner.jpg
 # Open background particles | 开启背景粒子
-open_bg_particle: true
+open_bg_particle: false
 # Open animation in homepage and head | 开启主页及头部动画
 open_animation: true
 
@@ -113,7 +113,7 @@ changyan_appkey: false
 # 友言，输入id
 youyan_id: false
 # disqus
-disqus: false
+disqus: blog-lungern-site
 
 # Analytics | 分析
 # 站长分析，输入站点id
@@ -132,4 +132,4 @@ access_counter:
   site_pv: 总访问量：
 
 # Copyright Information | 版权信息
-copyright: 2017 MinHow
+copyright: 2017 Lungern
