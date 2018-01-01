@@ -48,14 +48,14 @@ social:
     title: Github
     url: //github.com/xiiiAtCn
     target: true
-  weibo:
-    title: Weibo
-    url: 
-    target: false
   twitter:
     title: Twitter
     url: //twitter.com/AissassiA
-    target: fasle
+    target: true
+  # weibo:
+  #   title: Weibo
+  #   url: 
+  #   target: false
   #qq:
   #weixin:
   #snapchat:
@@ -68,9 +68,9 @@ social:
 # Content
 
 # Excerpt length | 摘录长度
-excerpt_length: 190
+excerpt_length: 200
 # Excerpt link | 摘录链接
-excerpt_link: more>>
+excerpt_link: 更多>>
 # New window open link | 新窗口打开文章
 open_new_link: false
 # Article default cover picture，size：350*150 | 文章默认封面图，尺寸：350*150
@@ -78,7 +78,7 @@ cover_picture: images/banner.jpg
 # Open background particles | 开启背景粒子
 open_bg_particle: false
 # Open animation in homepage and head | 开启主页及头部动画
-open_animation: true
+open_animation: false
 
 # Article
 
@@ -97,7 +97,7 @@ style:
 reward:
   # 0-close, 1-All articles are rewarding, 2-Article's md file has reward:true attribute, only reward
   # 0-关闭, 1-所有文章均有打赏, 2-文章的md文件里有reward:true属性，才有打赏
-  status: 1
+  status: 0
   # 标题
   title: 多少都行~
   # 微信，关闭设为 false
@@ -127,9 +127,13 @@ google_analytics: false
 
 # Access statistics | “不蒜子”访问量统计
 access_counter:
-  on: true
+  on: false
   site_uv: 总访客数：
   site_pv: 总访问量：
 
 # Copyright Information | 版权信息
 copyright: 2017 Lungern
+
+#安全
+# 是否开启http自动跳转https: 当http和https协议都可以访问时，会自动跳转到https协议下，但目前不会附带查询参数和hash参数
+httpsOnly: true
