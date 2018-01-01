@@ -24,7 +24,7 @@
             }
         },
         showBackTop: function (scrollTop) {
-            backTop.css('display', (scrollTop > clientHeight) ? "block" : "none");
+            backTop.css('display', (scrollTop > 20) ? "block" : "none");
         },
         setTags: function (tags) {
             var labels = tags.find("a");
