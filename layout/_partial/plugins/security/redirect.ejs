@@ -1,0 +1,11 @@
+<% if (theme.httpsOnly){ %>
+    <script>
+        var protocol = location.protocol
+        if(protocol !== 'https:') {
+            var meta = document.createElement('meta')
+            meta['httpEquiv'] = 'refresh'
+            meta['content']='0;url=https://' + location.host + location.pathname
+            document.head.appendChild(meta)
+        }
+    </script>
+<% } %>
