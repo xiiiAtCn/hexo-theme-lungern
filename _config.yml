@@ -121,7 +121,7 @@ cnzz_analytics: false
 # 百度分析，输入key值
 baidu_analytics: false
 # google analytics | google分析
-google_analytics: false
+google_analytics: UA-111754848-1
 
 # Footer
 
