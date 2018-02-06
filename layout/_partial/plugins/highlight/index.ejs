@@ -1,0 +1,10 @@
+<% if (theme.highlight){ %>
+    <script>
+        hljs.initHighlightingOnLoad();
+        $(document).ready(function() {
+            $('pre div.line').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+        });
+    </script>
+<% } %>

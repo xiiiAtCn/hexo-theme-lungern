@@ -4,6 +4,7 @@
         headerMenu = $("#header-menu"),
         backTop = $("#sidebar-top"),
         sidebarToc = $('#sidebar-toc'),
+        style = $('#sidebar-style'),
         search = $('#sidebar-search'),
         searchWrap = $('.search-wrap'),
         tags = $("#sidebar-menu-box-tags"),
@@ -135,6 +136,21 @@
                 });
             }
         },
+        style:function() {
+            if($('.free-style').css('background-color') == 'rgb(38, 38, 38)') {
+                $('.free-style').css('background-color', '').css('border-top','1px solid rgb(38, 38, 38)')
+                $('#header-description').css('color', '')
+                $('.header-nav .social a').css('color', '')
+                $('#banner').removeClass('dark')
+                localStorage.removeItem('dark')
+            } else {
+                localStorage.setItem('dark', 'dark')
+                $('.free-style').css('background-color', '#262626').css('border-top','0px')
+                $('#header-description').css('color', 'white')
+                $('.header-nav .social a').css('color', 'white')
+                $('#banner').addClass('dark')
+            }
+        }
     };
 
     //初始化搜索数据
@@ -151,6 +167,7 @@
         $('#search-container').removeClass('search-container-show');
     });
 
+    //展开或关闭标题栏
     sidebarToc.click(function() {
         if(toc.hasClass('post-toc-top')) {
             toc.removeClass('post-toc-top')
@@ -161,6 +178,17 @@
         }
     })
 
+    $(function() {
+        let dark = localStorage.getItem('dark')
+        if(dark == 'dark') {
+            style.click().click()
+        }
+    })
+
+    //设置主题
+    style.click(function() {
+        Blog.style()
+    })
 
     //tags | 标签
     Blog.setTags(tags);//pc

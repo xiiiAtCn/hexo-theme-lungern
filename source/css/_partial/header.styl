@@ -2,7 +2,6 @@
   height: banner-height
   position: relative
   width: 100%
-  border-bottom: 1px solid color-border
   z-index: 1
   &:before, &:after
     content: ""
@@ -28,6 +27,11 @@
   background: url(banner-url) center #000
   background-size: cover
   z-index: -1
+
+#banner.dark
+  background: url(dark-banner) center rgb(38, 38, 38)
+
+  background-size: cover
 
 #header-row
   padding-top: 50px

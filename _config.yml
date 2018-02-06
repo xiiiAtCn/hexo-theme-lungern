@@ -21,6 +21,11 @@ banner_img: images/banner.jpg
 #    title: Home          Title | 标题
 #    url: //minhow.com    Url, absolute or relative path | 链接，绝对或相对路径
 #    target: true         Whether to jump out | 是否跳出
+
+# 主题切换
+dark_banner: images/magic.jpg
+
+
 menu:
   home:
     title: Home
@@ -67,6 +72,8 @@ social:
 
 # Content
 
+# code
+highlight: true
 # Excerpt length | 摘录长度
 excerpt_length: 200
 # Excerpt link | 摘录链接
