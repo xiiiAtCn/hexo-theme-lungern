@@ -132,7 +132,7 @@ access_counter:
   site_pv: 总访问量：
 
 # Copyright Information | 版权信息
-copyright: 2017 Lungern
+copyright: copyright© 2016-2018 lungern.site All Rights Reserved
 
 #安全
 # 是否开启http自动跳转https: 当http和https协议都可以访问时，会自动跳转到https协议下，但目前不会附带查询参数和hash参数
