@@ -3,6 +3,7 @@
         toc = $("#post-toc"),
         headerMenu = $("#header-menu"),
         backTop = $("#sidebar-top"),
+        sidebarToc = $('#sidebar-toc'),
         search = $('#sidebar-search'),
         searchWrap = $('.search-wrap'),
         tags = $("#sidebar-menu-box-tags"),
@@ -57,7 +58,7 @@
                 }, 300);
             }
         },
-        showToc: function (scrollTop) {
+        /* showToc: function (scrollTop) {
             if (scrollTop / clientHeight >= 0.4) {
                 toc.removeClass("post-toc-top");
                 toc.addClass("post-toc-not-top");
@@ -65,7 +66,7 @@
                 toc.removeClass("post-toc-not-top");
                 toc.addClass("post-toc-top");
             }
-        },
+        }, */
         showMobileHeaderMenu: function (status) {
             if (_mobileHeaderMenuLocked) {
                 return false;
@@ -150,6 +151,17 @@
         $('#search-container').removeClass('search-container-show');
     });
 
+    sidebarToc.click(function() {
+        if(toc.hasClass('post-toc-top')) {
+            toc.removeClass('post-toc-top')
+            toc.addClass('post-toc-not-top')
+        } else {
+            toc.addClass('post-toc-top')
+            toc.removeClass('post-toc-not-top')
+        }
+    })
+
+
     //tags | 标签
     Blog.setTags(tags);//pc
     Blog.setTags(mobileTags);//mobile
@@ -206,7 +218,7 @@
         var scrollTop = d.documentElement.scrollTop || d.body.scrollTop;
         Blog.showHeaderMenu(scrollTop);
         Blog.showBackTop(scrollTop);
-        Blog.showToc(scrollTop);
+        // Blog.showToc(scrollTop);
     }, false);
     
     //Mobile Menu

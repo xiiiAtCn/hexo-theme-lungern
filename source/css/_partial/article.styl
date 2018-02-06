@@ -453,9 +453,9 @@ $article-share-link
 
 .post-toc-pos
   z-index: 999
-  bottom: 77%
-  left: calc(50% - 660px)
+  bottom: 65%
   position: fixed
+  right: calc(50% - 240px)
   .post-article
     float: left
     width: 80%
@@ -464,17 +464,22 @@ $article-share-link
 .post-toc-not-top
   -webkit-transition: opacity .5s ease-in-out
   transition: opacity .5s ease-in-out
-  opacity: 1
+  display: block
 
 .post-toc-top
   -webkit-transition: opacity .5s ease-in-out
   transition: opacity .5s ease-in-out
-  opacity: 0
+  display: none
 
 .post-toc-wrap
-  position: fixed
-  border-radius: 3px
+  position: absolute
+  z-index: 200
+  opacity: 1
+  border-radius: 6px
+  background-color: rgb(238, 238, 238)
+  border: 1px solid rgb(48, 211, 211)
   width: 200px
+  padding: 0 10px
   max-height: 400px
   color: #313131
   &.fixed
@@ -491,8 +496,7 @@ $article-share-link
     color: #727272
     text-align: center
     line-height: 20px
-.post-toc-wrap > ol
-  border-left: 1px solid #ddd
+
 .post-toc-wrap > ol > li
   margin: 0
   padding-left: 0
@@ -523,9 +527,9 @@ $article-share-link
   position: relative
   z-index: 2
   padding: 3px 10px
+  vertical-align: sub
   line-height: 1.5rem
   color: inherit
-  word-break: break-all
   text-decoration: none
   &:hover
     opacity: .8
@@ -539,6 +543,13 @@ $article-share-link
     right: 0
     width: 100%
     height: 100%
+.post-toc-text
+  display: inline-block
+  height: 1.2rem
+  max-width: 160px
+  overflow: hidden
+  text-overflow:ellipsis
+  white-space: nowrap
 
 .post-copyright
   margin: 30px 0
@@ -546,7 +557,7 @@ $article-share-link
   .content
     margin-bottom: 1em
     padding: 10px 0 30px 20px
-    word-break: break-all
+    word-break: keep-all
     color: #727272
     background: lighten( main-color, 95%)
     border-radius: 10px
