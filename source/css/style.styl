@@ -110,3 +110,14 @@ if sidebar is left
 @import "_partial/share"
 @import "_partial/scroll"
 @import "_partial/reward"
+
+// 在索引前面添加了符号链接
+a.headerlink:before {
+  content: "§"
+  margin-right: 5px
+  font-size: 1em
+  color: #096dd9
+}
+a.headerlink:hover {
+  text-decoration: none
+}
