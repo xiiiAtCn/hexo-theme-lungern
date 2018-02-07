@@ -24,7 +24,7 @@ banner_img: images/banner.jpg
 
 # 主题切换
 dark_banner: images/magic.jpg
-
+dark_theme: '#262626'
 
 menu:
   home:

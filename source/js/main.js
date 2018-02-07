@@ -137,18 +137,19 @@
             }
         },
         style:function() {
-            if($('.free-style').css('background-color') == 'rgb(38, 38, 38)') {
+            let color = w.mihoConfig.dark_theme || '#262626'
+            if($('.free-style').css('background-color') == 'rgba(0, 0, 0, 0)') {
+                $('.free-style').css('background-color', color).css('border-top','0px')
+                $('#header-description').css('color', 'white')
+                $('.header-nav .social a').css('color', 'white')
+                $('#banner').addClass('dark')
+                localStorage.setItem('dark', 'dark')
+            } else {
                 $('.free-style').css('background-color', '').css('border-top','1px solid #eee')
                 $('#header-description').css('color', '')
                 $('.header-nav .social a').css('color', '')
                 $('#banner').removeClass('dark')
                 localStorage.removeItem('dark')
-            } else {
-                localStorage.setItem('dark', 'dark')
-                $('.free-style').css('background-color', '#262626').css('border-top','0px')
-                $('#header-description').css('color', 'white')
-                $('.header-nav .social a').css('color', 'white')
-                $('#banner').addClass('dark')
             }
         }
     };
