@@ -3,8 +3,7 @@ hexo-theme-miho
 ================
 
 MiHo is a single and responsive design theme for [Hexo](//hexo.io).
-MiHo requires Hexo 3.0 and above, Compatible with mobile browsing; Theme DEMO:[MinHow's Blog](http://blog.minhow.com/).
-中文文档请[查看](http://blog.minhow.com/2017/08/01/blog/installation-configuration/).
+MiHo requires Hexo 3.0 and above, Compatible with mobile browsing; Theme DEMO:[Lungern's Blog](https://blog.lungern.site/).
 
 ## Summary
 * [General](#general)
@@ -30,7 +29,8 @@ MiHo requires Hexo 3.0 and above, Compatible with mobile browsing; Theme DEMO:[M
 * Stylus CSS preprocessor
 * Local Site Search
 * Pagination
-* ejs HTML templates
+* Theme custom
+* Ejs HTML templates
 
 ## Installation
 
@@ -85,6 +85,10 @@ banner_img: images/banner.jpg
 #    title: Home          Title | 标题
 #    url: //minhow.com    Url, absolute or relative path | 链接，绝对或相对路径
 #    target: true         Whether to jump out | 是否跳出
+
+# theme change
+dark_banner: images/magic.jpg
+dark_theme: '#262626'
 menu:
   home:
     title: Home
