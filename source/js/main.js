@@ -138,7 +138,7 @@
         },
         style:function() {
             if($('.free-style').css('background-color') == 'rgb(38, 38, 38)') {
-                $('.free-style').css('background-color', '').css('border-top','1px solid rgb(38, 38, 38)')
+                $('.free-style').css('background-color', '').css('border-top','1px solid #eee')
                 $('#header-description').css('color', '')
                 $('.header-nav .social a').css('color', '')
                 $('#banner').removeClass('dark')
