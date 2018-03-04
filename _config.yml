@@ -53,10 +53,10 @@ social:
     title: Github
     url: //github.com/xiiiAtCn
     target: true
-  twitter:
-    title: Twitter
-    url: //twitter.com/AissassiA
-    target: true
+  # twitter:
+    # title: Twitter
+    # url: //twitter.com/AissassiA
+    # target: true
   # weibo:
   #   title: Weibo
   #   url: 
